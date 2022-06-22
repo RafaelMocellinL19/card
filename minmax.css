@@ -1,0 +1,9 @@
+.box{
+    grid-template-columns: minmax(50px, 800px) repeat(2,100px, 800px);
+
+}
+
+.cards{
+    grid-template-columns: minmax(50px, 800px) repeat(2,100px, 800px);
+
+}

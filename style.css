@@ -1,0 +1,212 @@
+html {
+    /* background-color: rgb(3, 0, 26);*/
+    background-color: #353535;
+}
+
+
+
+/* .btn{
+    
+text-decoration: none;
+color: #2f80ed;
+    background-color: #141922;
+    
+     
+
+} */
+
+.box {
+
+
+    transform: translate(50px, -50px);
+    top: 40%;
+    left: 40%;
+    position: relative;
+    width: 310px;
+    height: 420px;
+    background-color: #000000;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: translateY(-20px);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    width: 560px;
+    height: 50px;
+    transform: rotate(-40deg) translateY(-400px);
+    background: linear-gradient(to right, #56e8f2, #2f80ed) ;
+}
+
+
+@keyframes border-effect {
+    0% {
+        transform: rotate(-40deg) translateY(-100px);
+    }
+
+    100% {
+        transform: rotate(-40deg) translateY(530px);
+    }
+}
+
+.box:hover::after {
+    animation: border-effect 1.2s ease;
+}
+
+.text-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    width: 295px;
+    height: 415px;
+    z-index: 10;
+    color: #2f80ed; 
+    padding: 1em;
+    display: grid;
+     flex-direction: column; 
+    justify-content: space-evenly;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
+ } 
+
+.text-content a {
+    text-decoration: #2f80ed;
+    display: grid;
+    width: 140px;
+    text-align: center;
+    color: #fff;
+    line-height: 43px;
+    border: 2px solid #fff;
+
+
+} 
+ 
+
+.cards > div {
+border: 2px solid rgb(230, 64, 64);
+background-color: #000000;
+color: #2f80ed;
+font-size: 20px;
+}
+
+
+
+
+.container {
+    /* color: rgb(2, 150, 180); */
+    background-color: #000000;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto ;
+    grid-template-rows: repeat(4, 80px);
+    align-items: center;
+    padding: 40px;
+    margin: 10px;
+    border: #2e80ec;
+}
+
+
+
+.title {
+    color: #2f80ed;
+    border: solid 5px #353535;
+    text-align: center;
+    margin: 40px;
+    padding: 15px;
+}
+
+.copyright {
+    color: #2f80ed;
+    border: #000000;
+
+
+}
+
+.rodape .redes-sociais .facebook,
+.rodape .redes-sociais .instagram {
+    /* display:grid; */
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.whatsapp .github .linkedin {
+    /* display: grid; */
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+
+}
+
+.rodape .redes-sociais {
+    float: right;
+    clear: both;
+
+}
+
+.rodape .conteudo-de-baixo {
+    margin-top: 40px;
+}
+
+.rodape {
+    justify-content: space-between;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+a {
+
+    text-decoration: none;
+    color: #2f80ed;
+
+}
+
+a:hover {
+
+    background-color: #000000;
+    padding: 0,5px;
+}
+
+
+.net {
+    text-align: center;
+    color: #2e80ec;
+    text-decoration: underline #141922;
+    margin: 25px;
+    padding: 25px;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #353535;
+    border: 1px solid rgb(230, 64, 64);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#000000;
+    border: 1px solid #2f80ed;
+    border-radius: 10px;
+}
+.btn{
+    background-color: #353535;
+    border: 1px solid rgb(230, 64, 64);
+}
